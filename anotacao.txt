@@ -1,0 +1,52 @@
+# COMANDO PARA SUBIR SERVIDOR
+$
+uvicorn <caminho_main> --reload
+ex:
+uvicorn main:app --reload
+
+# ATIVAR AMBIENTE VIRTUAL
+pyenv shell workoutapi
+
+# DESATIVAR
+pyenv shell --unset
+
+
+## CONFIGURAÇÃO DE ARQUIVO DOCKER-compose
+version: "3"
+services:
+  db:
+    image: postgres:11-alpine
+    environment:
+      POSTGRES_PASSWORD: workout
+      POSTGRES_USER: workout
+      POSTGRES_DB: workout
+    ports:
+      - "5432:5432"
+    
+    
+
+## COMANDO PARA EXECUTAR DOCKER APOS INSTALACAO
+$sudo docker compose up -d
+
+## INSTALAÇÃO ALEMBIQUE
+pip install alembic
+
+## APOS
+alembic init alembic
+
+## CRIAR ARQUIVO REQUIREMENTS
+pip freeze > requirements.txt
+
+## Instalar asyncpg
+pip install asyncpg
+
+## configuração alembic.ini exemplo
+sqlalchemy.url = postgresql+asyncpg://workout:workout@localhost/workout
+
+
+## ARQUIVO ENV.py
+E necessario importa BaseModel e adicionar a seguinte configuração:
+target_metadata = BaseModel.metadata
+
+## INstalar configurações pytdantic
+pip install pydantic-settings
