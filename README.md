@@ -29,7 +29,7 @@ Docker
 Docker Compose
 
 ### Clone o Repositório:
-Bash
+Bash<\br>
 git clone https://github.com/seu-usuario/workout-api.git
 
 ### Crie e Ative o Ambiente Virtual:
@@ -47,12 +47,12 @@ alembic upgrade head
 
 ### Inicie a API:
 Bash
-uvicorn workout_api.main:app --reload
+uvicorn workout_api.main:app --reload<\br>
 A API estará disponível em http://localhost:8000/.
 
 ## Endpoints
-A documentação completa da API, incluindo detalhes sobre os endpoints, parâmetros e exemplos de requisições, está disponível em:
-Swagger UI: http://localhost:8000/docs
+A documentação completa da API, incluindo detalhes sobre os endpoints, parâmetros e exemplos de requisições, está disponível em:<\br>
+Swagger UI: http://localhost:8000/docs<\br>
 Redoc: http://localhost:8000/redoc
 
 ## Contribuição
