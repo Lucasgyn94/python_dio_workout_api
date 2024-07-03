@@ -1,5 +1,5 @@
 # Workout API - Uma API RESTful para Gerenciamento de Atletas e Treinos
-Esta API RESTful foi desenvolvida com FastAPI, um framework moderno e rápido para construção de APIs em Python.<\br>Ela permite o gerenciamento completo de atletas, categorias de treino e centros de treinamento, oferecendo funcionalidades como cadastro, consulta, edição e exclusão de dados.
+API RESTful desenvolvida durante as aulas ministradas pelo Expert na Dio utilizando FastAPI, um framework moderno e rápido para construção de APIs em Python.<br>Ela permite o gerenciamento completo de atletas, categorias de treino e centros de treinamento, oferecendo funcionalidades como cadastro, consulta, edição e exclusão de dados.
 
 ## Recursos Principais
 Gerenciamento de Atletas:
