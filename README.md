@@ -47,7 +47,7 @@ alembic upgrade head
 
 ### Inicie a API:
 Bash
-uvicorn workout_api.main:app --reload<\br>
+uvicorn workout_api.main:app --reload<br>
 A API estará disponível em http://localhost:8000/.
 
 ## Endpoints
